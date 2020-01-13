@@ -4,40 +4,26 @@
     <meta charset="utf-8">
 
     <title>Tebak-tebak Angka</title>
-
-    <style>
-      html {
-        font-family: sans-serif;
-      }
-
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-      }
-
-      .lastResult {
-        color: white;
-        padding: 3px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <h1>Tebak-tebak Angka</h1>
 
-    <p>Kami udah milih satu angka acak dari 1 sampai 100. Coba.. lu bisa nebak dalam 10 kali kesempatan gak? Kami kasih tau kalau tebakan lu kegedean atau kekecilan.</p>
+    <p>Gue udah milih satu angka acak dari 1 sampai 100. Coba.. lu bisa nebak dalam 10 kali kesempatan gak? Gue kasih tau berapa kali lagi lu bisa nebak dan gue kasih tau juga kalau tebakan lu kegedean atau kekecilan.</p>
 
     <div class="form">
       <label for="guessField">Masukin tebakan lu: </label><input type="text" id="guessField" class="guessField">
       <input type="submit" value="Tebak!" class="guessSubmit">
     </div>
 
+    <hr>
+
     <div class="resultParas">
-      <p class="guesses"></p>
       <p class="lastResult"></p>
       <p class="lowOrHi"></p>
+      <p class="turns"></p>
+      <p class="guesses"></p>
     </div>
 
     <script src="script.js"></script>

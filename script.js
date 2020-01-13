@@ -1,25 +1,25 @@
-// generate random number from 1 to 100
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-// to modify 'p' elements according to player's guess
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
+const turns = document.querySelector(`.turns`);
 
-// to get the query form input and submit it
 const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 
-// to keep track how many guesses left and to reset the game later
+let turnCount = 10;
 let guessCount = 1;
 let resetButton;
 
 function checkGuess() {
   let userGuess = Number(guessField.value);
+  let turnLeft = turnCount - guessCount;
   if (guessCount === 1) {
     guesses.textContent = 'Tebakan sebelumnya: ';
   }
-  guesses.textContent += userGuess + ' ';
+  guesses.textContent += userGuess + ', ';
+  turns.textContent = 'Sisa tebakan : ' + turnLeft;  
 
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Horeeee! Tebakan lu bener!';
