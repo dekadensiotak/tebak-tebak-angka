@@ -4,13 +4,13 @@
     <meta charset="utf-8">
 
     <title>Tebak-tebak Angka</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <h1>Tebak-tebak Angka</h1>
 
-    <p>Gue udah milih satu angka acak dari 1 sampai 100. Coba.. lu bisa nebak dalam 10 kali kesempatan gak? Gue kasih tau berapa kali lagi lu bisa nebak dan gue kasih tau juga kalau tebakan lu kegedean atau kekecilan.</p>
+    <p>Gue udah milih satu angka. Tebak angka yang gue pilih antara 1 sampai 100. Kalau bener, gue kasih hadiah</p>
 
     <div class="form">
       <label for="guessField">Masukin tebakan lu: </label><input type="text" id="guessField" class="guessField">
@@ -21,11 +21,15 @@
 
     <div class="resultParas">
       <p class="lastResult"></p>
+      <p>
+        <a class="reward" href="" target="_blank"></a>
+      </p>
       <p class="lowOrHi"></p>
-      <p class="turns"></p>
       <p class="guesses"></p>
+      <p class="turns"></p>
     </div>
 
-    <script src="script.js"></script>
+    <footer><a href="https://dekadesniotak.id">dekadensiotak</a> with ❤</footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  color:#FFFFFF; 
+  background: #06303A;
+  font-size:1em;
+  text-align: center;
+  line-height:50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
