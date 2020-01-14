@@ -68,7 +68,7 @@ function setGameWin() {
   reward.textContent = 'Klik untuk hadiah';
   
   resetButton = document.createElement('button');
-  resetButton.textContent = 'Maen lagi dong Bro!';
+  resetButton.textContent = 'Maen lagi dong!';
   document.body.appendChild(resetButton);
   resetButton.addEventListener('click', resetGame);
 }
@@ -89,6 +89,8 @@ function resetGame() {
   for (let i = 0 ; i < resetParas.length ; i++) {
     resetParas[i].textContent = '';
   }
+
+  reward.textContent = '';
 
   resetButton.parentNode.removeChild(resetButton);
 
